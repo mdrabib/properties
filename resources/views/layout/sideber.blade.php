@@ -24,7 +24,7 @@
                     <div class="collapse" id="sidebarDashboards">
                         <ul class="side-nav-second-level">
                             <li>
-                                <a href="#">Properties</a>
+                                <a href="{{ route('properties.index')}}">Properties</a>
                                 {{-- <a href="{{route('member.show',Crypt::decrypt(Session::get('userId')))}}">Properties</a> --}}
                             </li>
                         </ul>

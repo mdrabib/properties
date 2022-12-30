@@ -35,7 +35,7 @@ use App\Http\Controllers\Management\TeamController;
 
 use App\Http\Controllers\Projects\CommonProject;
 use App\Http\Controllers\Projects\ProjectsController;
-
+use App\Http\Controllers\PropertiesController;
 use App\Http\Controllers\Stock\ProjectStoreController;
 use App\Http\Controllers\Stock\PurchaseController;
 use App\Http\Controllers\Stock\PurchaseDetailsController;
@@ -155,5 +155,7 @@ Route::group(['middleware' => AdminMiddleware::class], function () {
         Route::resource('purchase',PurchaseController::class);
         Route::resource('purchaseDetails',PurchaseDetailsController::class);
 
+        // properties
+        Route::resource('properties',PropertiesController::class);
     });
 });
