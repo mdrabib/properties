@@ -53,7 +53,12 @@
                                         <td>{{ $property->district_id}}</td>
                                         <td>{{ $property->property_image}}</td>
                                         <td>{{ $property->property_value}}</td>
-                                        <td></td>
+                                        <td>
+                                            <a href="">
+                                                <i></i>
+                                                <i></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 @empty
                                     <tr>
