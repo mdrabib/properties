@@ -3,21 +3,27 @@ import React from 'react'
 function Property() {
   return (
     <>
+    <section class="section-property section-t8">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a">Latest Properties</h2>
+                </div>
+                <div class="title-link">
+                  <a href="property-grid.html">All Property
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
     <section class="property-grid grid">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="grid-option">
-              <form>
-                <select class="custom-select">
-                  <option selected>All</option>
-                  <option value="1">New to Old</option>
-                  <option value="2">For Rent</option>
-                  <option value="3">For Sale</option>
-                </select>
-              </form>
-            </div>
-          </div>
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
