@@ -22,13 +22,13 @@ use App\Http\Controllers\Builder\DocumentController;
 // });
 
 
-Route::get('react',function(){
+Route::get('/home',function(){
     return view('index');
 });
 
 
 Route::get('property',function(){
-    return view('Properties.index');
-})->name('properties');
+    return view('Property.index');
+});
 
 

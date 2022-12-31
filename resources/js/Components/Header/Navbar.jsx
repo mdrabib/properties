@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -18,31 +19,29 @@ const Navbar = () => {
       <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" href="index.html">Home</a>
+            <Link to="/home">
+              <a className="nav-link active">Home</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="about.html">About</a>
+            <Link to="/about">
+                <a className="nav-link">About</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="property-grid.html">Property</a>
+            <Link to="/property">
+              <a className="nav-link">Property</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="blog-grid.html">Blog</a>
-          </li>
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Pages
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="property-single.html">Property Single</a>
-              <a className="dropdown-item" href="blog-single.html">Blog Single</a>
-              <a className="dropdown-item" href="agents-grid.html">Agents Grid</a>
-              <a className="dropdown-item" href="agent-single.html">Agent Single</a>
-            </div>
+            <Link to="/blog">
+              <a className="nav-link">Blog</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">Contact</a>
+            <Link to="/contact">
+              <a className="nav-link">Contact</a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,28 +1,33 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
-import Home from './Components/Content/Homepage';
+import {BrowserRouter as Router,Routes,Route,IndexRoute} from "react-router-dom";
+import Home from './Components/Content/Home';
+import PropertyPage from './Components/Content/Property/PropertyPage';
 import Footer from './Components/Footer/Footer';
 import FooterSection from './Components/Footer/FooterSection';
 import Header from './Components/Header';
 import Layout from './Components/Layout';
+import Properies from './Properties';
+
 // import Layout from './Components/Layout';
 // import Main from './Components/Main';
 
 export default function App(){
     return(
-        <Router>
-            <Header />            
+        <>
+            <Header />
           <Routes>
-            <Route path='/react' element={<Layout> <Home/></Layout>}/>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/property' element={<PropertyPage/>}/>
+
           </Routes>
           <FooterSection/>
             <Footer/>
-        </Router>
+        </>
     );
 }
 
 if(document.getElementById('root')){
-    createRoot(document.getElementById('root')).render(<App />)
+    createRoot(document.getElementById('root')).render(<Router><App/></Router>)
 }

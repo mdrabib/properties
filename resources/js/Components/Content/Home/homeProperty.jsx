@@ -2,7 +2,7 @@ import React from 'react'
 
 function Property() {
   return (
-    <section className="section-property section-t8">
+  <section className="section-property section-t8">
     <div className="container">
       <div className="row">
         <div className="col-md-12">
