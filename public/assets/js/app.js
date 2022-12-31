@@ -144,8 +144,6 @@
             });
         }
 
-
-               
         //Horizontal Menu (For SM Screen)
         var AllNavs = document.querySelectorAll('ul.navbar-nav .dropdown .dropdown-toggle');
 
@@ -164,7 +162,7 @@
                         bootstrap.Dropdown.getInstance(parent).show();
                         }
                     isInner = true;
-                 }
+                }
             });
             
             element.addEventListener('hide.bs.dropdown', function(event){
@@ -184,11 +182,8 @@
                 }
             });
             
-         
         });
 
-
- 
 
     },
 

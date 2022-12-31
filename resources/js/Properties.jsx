@@ -59,6 +59,6 @@ export default function Properies() {
     );
 }
 
-if (document.getElementById("root")) {
+if (document.getElementById("property")) {
     createRoot(document.getElementById("property")).render(<Properies />);
 }
